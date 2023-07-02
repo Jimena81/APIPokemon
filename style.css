@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+body {
+  background: #efefbb;
+  background: linear-gradient(to right, #d4d3dd, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-size: 50px;
+  color: rgb(176, 176, 25);
+}
+
+ .poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  
+}
+
+.pokemonBlock {
+ 
+background-image: linear-gradient(
+  0deg,
+  hsl(339deg 47% 64%) 0%,
+  hsl(342deg 46% 65%) 9%,
+  hsl(344deg 45% 66%) 17%,
+  hsl(347deg 45% 66%) 24%,
+  hsl(350deg 44% 67%) 31%,
+  hsl(353deg 44% 68%) 37%,
+  hsl(356deg 43% 69%) 42%,
+  hsl(360deg 42% 69%) 47%,
+  hsl(3deg 43% 69%) 51%,
+  hsl(6deg 44% 69%) 56%,
+  hsl(10deg 45% 69%) 60%,
+  hsl(13deg 45% 69%) 65%,
+  hsl(15deg 46% 69%) 71%,
+  hsl(18deg 47% 69%) 77%,
+  hsl(21deg 48% 69%) 84%,
+  hsl(23deg 49% 69%) 92%,
+  hsl(25deg 49% 69%) 100%
+);
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(125, 27, 96, 0.5);
+  margin: 10px;
+  text-align: center;
+}
+
+.imgContainer {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+}
+
+img {
+  width: 80%;
+ 
+
+}
+
+
+
+.number {
+ 
+  color:white;
+  margin-top: 70px;
+  border-radius: 10px;
+  font-size: 2em;
+  flex-basis: 25%;
+}
+
+.name {
+  flex-basis: 25%;
+  letter-spacing: 5px;
+  font-size: 2em;
+  color:rgb(255, 255, 255);
+} 
