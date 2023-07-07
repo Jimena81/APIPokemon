@@ -1,21 +1,5 @@
 const pokemon_container = document.querySelector('.poke-container')
-//const pokemon_count = 150
-/*const colors = {
-    fire: '#FDDFDF',
-    grass: '#DEFDE0',
-	electric: '#FCF7DE',
-	water: '#DEF3FD',
-	ground: '#f4e7da',
-	rock: '#d5d5d4',
-	fairy: '#fceaff',
-	poison: '#98d7a5',
-	bug: '#f8d5a3',
-	dragon: '#97b3e6',
-	psychic: '#eaeda1',
-	flying: '#F5F5F5',
-	fighting: '#E6E0D4',
-	normal: '#F5F5F5'
-}*/
+
 function pokemon (id){
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
     .then((response) => response.json())
@@ -49,15 +33,19 @@ function createPokemon(pokemon){
     const name= document.createElement("p");
     name.classList.add("name");
     name.textContent = pokemon.name;
+    
+    const pokemonType= pokemon.types[0].type.name
+    const type = document.createElement("p");
+    type.classList.add("type");
+    type.textContent = `type:${pokemonType}`;
 
     card.appendChild(spriteContainer);
     card.appendChild(number);
     card.appendChild(name);
+    card.appendChild(type);
 
 
     pokemon_container.appendChild(card)
-
-
 }
 
 Pokemons(20)
